@@ -77,14 +77,8 @@ var Hash = function(string, max) {
   var should = chai.should;
   
   describe('test', () => {
-    it('should poop', () => {
-      expect(true).to.equal(true);
-    })
     it('should return the remainder', () => {
       expect(Hash('poop',2)).to.equal(0);
-    })
-    it('should return another Hashing test case', () => {
-      expect(Hash('Armadillo'));
     })
     it('should test basic edge case', () => {
       expect(Hash(undefined,2)).to.equal(null);
